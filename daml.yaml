@@ -1,0 +1,23 @@
+sdk-version: 1.9.0
+name: mortgage-app
+version: 0.1.0
+source: daml
+init-script: Mortageg:test
+parties:
+- ledger-party-business
+- ledger-party-originator
+- ledger-party-gse
+dependencies:
+- daml-prim
+- daml-stdlib
+- daml-trigger
+- daml-script
+sandbox-options:
+- --wall-clock-time
+- --ledgerid=mortgage-app
+- --implicit-party-allocation=false
+start-navigator: false
+codegen:
+  js:
+    output-directory: ui/daml.js
+    npm-scope: daml.js

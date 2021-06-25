@@ -1,0 +1,18 @@
+-- Copyright (c) 2021 Rethink Ledgers LLC. All rights reserved.
+-- SPDX-License-Identifier: Apache-2.0
+
+module User where
+
+-- MAIN_TEMPLATE_BEGIN
+template User with
+    username: Party
+    following: [Party]
+  where
+    signatory username
+    observer following
+-- MAIN_TEMPLATE_END
+
+    key username: Party
+    maintainer key
+
+    
