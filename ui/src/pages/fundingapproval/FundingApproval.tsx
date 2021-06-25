@@ -5,7 +5,7 @@ import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
 import TableBody from "@material-ui/core/TableBody";
 import { useStreamQueries,  } from "@daml/react";
-import { Mortagge } from '@daml.js/mortgage-app/lib';
+import { Mortgage } from '@daml.js/mortgage-app/lib';
 import useStyles from "./styles";
 import { useKnownParties } from '../../UseKnownParties'; // BGY
 
