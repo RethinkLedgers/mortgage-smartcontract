@@ -145,7 +145,7 @@ daml build
 The DAR file will be placed into the the following folder, with the following file name:
 
 ```
-.daml/dist/ef-app-0.1.0.dar
+.daml/dist/mortgage-app-0.1.0.dar
 ```
 
 From the project root run the following command in your terminal for generating javascript files needed by the UI form your Daml model:
