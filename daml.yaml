@@ -2,7 +2,7 @@ sdk-version: 1.9.0
 name: mortgage-app
 version: 0.1.0
 source: daml
-init-script: Mortageg:test
+init-script: Mortgage:test
 parties:
 - ledger-party-business
 - ledger-party-originator

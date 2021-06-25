@@ -71,7 +71,7 @@ daml start
 The DAR file will be placed into the the following folder, with the following file name:
 
 ```
-.daml/dist/ef-app-0.1.0.dar
+.daml/dist/mortgage-app-0.1.0.dar
 ```
 
 In this case you don't have to do anything with the DAR file.
@@ -127,7 +127,7 @@ After Yarn has started the server, you can use your UI on `localhost:3000`.
 
 ###
 
-Log in with a party name hou wish to use. You don't need any password.
+Log in with a party name you wish to use. You don't need any password.
 
 
 ## Run the app on Daml Hub
@@ -156,7 +156,7 @@ daml codegen js
 
 Log in to project:Dabl, create a new project, and a new ledger. Upload and deploy the DAR file to Daml Hub. 
 
-On the Users tab, create 4 parties for Originator, Business, Dealer and Lessor. (Note that unlike described above, the initializatin scipt doesn't run automatically on Daml Hub. So after uploading the Dar file and starting the ledger, you won't have the parties allocated specified in the init script.)
+On the Users tab, create 3 parties for Originator, Home Owner, GSE (Note that unlike described above, the initializatin scipt doesn't run automatically on Daml Hub. So after uploading the Dar file and starting the ledger, you won't have the parties allocated specified in the init script.)
 
 Copy the party identifiers returned by Daml Hub into the `ui/scr/parties.json` file, into the respective JSON object, which already contains the respective party display names. Don't forget to save the file. 
 
@@ -206,7 +206,7 @@ Yarn will create a `build` folder under the `ui` folder.
 Zip the `build` folder.
 
 ```shell
-zip -r ../ef-app-ui.zip build
+zip -r ../mortgage-app-ui.zip build
 ```
 
 Login to hub.daml.com
