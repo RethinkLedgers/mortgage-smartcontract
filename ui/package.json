@@ -1,9 +1,9 @@
 {
-  "name": "mortagge-app",
+  "name": "mortgage-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@daml.js/mortage-app": "file:daml.js/mortgage-app-0.1.0",
+    "@daml.js/mortgage-app": "file:daml.js/mortgage-app-0.1.0",
     "@daml/ledger": "1.9.0",
     "@daml/react": "1.9.0",
     "@daml/types": "1.9.0",
