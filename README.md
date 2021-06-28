@@ -105,9 +105,9 @@ In the initializatin script, as mentioned above, we have allocated parties with 
 displayName = Originator
 party identifier = ledger-party-originator
 
-This means, when starting up the application, you alaready have four parties allocated. 
+This means, when starting up the application, you alaready have 5 parties allocated. 
 
-You have to use party identifiers to log in, and see the display name of the logged in party on th UI, and have to use party display names to refer to other parties on the UI.
+You have to use party identifiers to log in, and see the display name of the logged in party on the UI, and have to use party display names to refer to other parties on the UI.
 
 Unfortunatley the distinction between party identifiers and display names is not possible yet on Daml Hub, so until this feature becomes available also on Daml Hub, we use a workaround, which you will see in the next section. 
 
@@ -219,6 +219,14 @@ You can navigate to the deployed application by clicking on the `View Site` butt
 You can log in to the application by the user names (not the displaynames specified in the `parties.json` file!) and the JWT tokens returned by Daml Hub. 
 
 Once logged in, you will see the display names displayed by the UI, and you have to enter the display names of the parties into the UI when referencing the ledger parties. 
+
+
+## JWT Token for Ledger-Parties for Postman Queries
+
+ledger-party-originator  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJtb3J0Z2FnZS1zbWFydGNvbnRyYWN0IiwiYXBwbGljYXRpb25JZCI6ImZvb2JhciIsImFjdEFzIjpbImxlZGdlci1wYXJ0eS1vcmlnaW5hdG9yIl19fQ.iUvtTONz1vEDKHLu-15uxOTa5AygvV7CnKpk-TwPfe0
+ledger-party-home owner  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJtb3J0Z2FnZS1zbWFydGNvbnRyYWN0IiwiYXBwbGljYXRpb25JZCI6ImZvb2JhciIsImFjdEFzIjpbImxlZGdlci1wYXJ0eS1ob21lIG93bmVyIl19fQ.awW_QCtqRa60vy0mr8Zg3kK4y1ZTZxkpr_9WozuRn2U
+ledger-party-gse    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJtb3J0Z2FnZS1zbWFydGNvbnRyYWN0IiwiYXBwbGljYXRpb25JZCI6ImZvb2JhciIsImFjdEFzIjpbImxlZGdlci1wYXJ0eS1nc2UiXX19.F7CTPRcBzfobOzfv4L9NSDCCnThJsJM8Ut8D6cYi830
+
 
 =======
 
